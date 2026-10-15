@@ -1,0 +1,40 @@
+/* UNIT I: CSS - dark "broadcast graphics" theme */
+:root { --bg:#0a0f24; --panel:#121a38; --line:#26335f; --cyan:#22d3ee; --lime:#a3e635; --red:#ff4d6d; --amber:#fbbf24; --txt:#e8ecff; --mute:#8d99c7; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--txt); font-family: 'Poppins', sans-serif; line-height: 1.55; }
+.topbar { background:#070b1c; border-bottom:1px solid var(--line); padding:12px 0; }
+.logo { font-weight:700; font-size:1.3rem; color:#fff; text-decoration:none; letter-spacing:.5px; }
+.logo span { color: var(--cyan); }
+.nav-link { color: var(--mute); font-weight:600; border-radius: 30px; padding:6px 16px; }
+.nav-link:hover, .nav-link.active { color:#04121a; background: var(--cyan); }
+#hero { padding: 34px 0 10px; }
+#hero h1 { font-weight:700; font-size: clamp(1.6rem,3.5vw,2.4rem); }
+#hero p { color: var(--mute); max-width: 640px; }
+.panel { background: var(--panel); border:1px solid var(--line); border-radius:18px; padding:20px; margin-bottom:20px; }
+.panel h2 { font-size:.95rem; letter-spacing:2px; text-transform:uppercase; color: var(--cyan); margin-bottom:14px; }
+canvas { max-width:100%; height:auto; border-radius:12px; background:#0d1430; }
+.slider-row label { font-size:.85rem; color: var(--mute); display:flex; justify-content:space-between; margin:0; }
+.slider-row label b { color: var(--txt); }
+input[type=range] { width:100%; accent-color: var(--cyan); margin-bottom:8px; }
+.btn-hv { background: var(--cyan); color:#04121a; font-weight:700; border:0; border-radius:30px; padding:8px 22px; }
+.btn-hv:hover { background:#67e8f9; }
+.btn-ghost { background:transparent; color: var(--txt); border:1px solid var(--line); border-radius:30px; padding:6px 14px; font-size:.82rem; }
+.btn-ghost:hover { border-color: var(--cyan); color: var(--cyan); }
+.verdict { text-align:center; border-radius:16px; padding:14px; font-weight:700; font-size:1.5rem; letter-spacing:1px; border:2px solid; }
+.verdict small { display:block; font-size:.8rem; font-weight:400; letter-spacing:0; color: var(--txt); opacity:.85; }
+.v-OUT { color: var(--red); border-color: var(--red); background: rgba(255,77,109,.1); }
+.v-NOT { color: var(--lime); border-color: var(--lime); background: rgba(163,230,53,.08); }
+.v-UC  { color: var(--amber); border-color: var(--amber); background: rgba(251,191,36,.1); }
+.chip { display:inline-block; font-size:.75rem; padding:2px 12px; border-radius:20px; border:1px solid var(--line); color: var(--mute); margin:2px 4px 2px 0; }
+.chip b { color: var(--txt); }
+table { color: var(--txt); } .table > :not(caption) > * > * { background: transparent; color: var(--txt); border-color: var(--line); }
+.step { background:#0d1430; border:1px solid var(--line); border-radius:14px; padding:14px; height:100%; }
+.step .n { width:34px; height:34px; border-radius:50%; background: var(--cyan); color:#04121a; font-weight:700; display:flex; align-items:center; justify-content:center; margin-bottom:8px; }
+.demo-pill { background: var(--amber); color:#111; font-size:.72rem; font-weight:700; padding:2px 12px; border-radius:20px; }
+.toast-box { position:fixed; right:22px; bottom:22px; z-index:2000; background:#fff; color:#0a0f24; padding:10px 20px; border-radius:12px; font-weight:600; }
+footer { text-align:center; color: var(--mute); font-size:.78rem; padding:10px 0 30px; }
+.kpi { text-align:center; } .kpi .num { font-size:2rem; font-weight:700; color:var(--cyan); line-height:1.1; } .kpi .lbl { font-size:.72rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--mute); } .kpi small { color:var(--mute); }
+.form-control, .form-select { background:#0d1430; border-color:var(--line); color:var(--txt); border-radius:12px; } .form-control:focus, .form-select:focus { background:#0d1430; color:var(--txt); border-color:var(--cyan); box-shadow:none; }
+fieldset { border:1px solid var(--line); border-radius:12px; padding:8px 14px 4px; margin-bottom:12px; } legend { float:none; width:auto; font-size:.8rem; color:var(--mute); padding:0 8px; margin:0; }
+.tag-IN { color:var(--lime); font-weight:700; } .tag-OUT { color:var(--red); font-weight:700; } .tag-ov { color:var(--amber); font-weight:700; }
+.err { color: var(--red); font-size:.85rem; }
